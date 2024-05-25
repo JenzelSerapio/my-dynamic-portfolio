@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Portfolio Admin Panel</h1>
+    </header>
+
+    <section class="section">
+        <h2>Introduction</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Title</th>
+                        <th>Profile Pic URL</th>
+                        <th>CV Link</th>
+                        <th>LinkedIn URL</th>
+                        <th>GitHub URL</th>
+                    </tr>
+                </thead>
+                <tbody id="dataBody"></tbody>
+            </table>
+        </div>
+        <form id="updateForm" class="form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="title" placeholder="Title" required>
+            <input type="text" name="profile_pic" placeholder="Profile Pic URL" required>
+            <input type="text" name="cv_link" placeholder="CV Link" required>
+            <input type="text" name="linkedin_url" placeholder="LinkedIn URL" required>
+            <input type="text" name="github_url" placeholder="GitHub URL" required>
+            <button type="submit">Update Profile</button>
+        </form>
+    </section>
+
+    <section class="section">
+        <h2>About Me</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Experience</th>
+                        <th>Education</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="aboutBody"></tbody>
+            </table>
+        </div>
+        <form id="aboutForm" class="form">
+            <input type="text" name="experience" placeholder="Experience" required>
+            <input type="text" name="education" placeholder="Education" required>
+            <textarea name="description" placeholder="Description" required></textarea>
+            <button type="submit">Update About Me</button>
+        </form>
+    </section>
+
+    <section class="section">
+        <h2>Contact Information</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>LinkedIn</th>
+                    </tr>
+                </thead>
+                <tbody id="contactBody"></tbody>
+            </table>
+        </div>
+        <form id="contactForm" class="form">
+            <input type="email" id="contactEmail" name="email" placeholder="Email" required>
+            <input type="text" id="contactLinkedIn" name="linkedin" placeholder="LinkedIn URL" required>
+            <button type="submit">Update Contact Info</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jenzel Serapio. All rights reserved.</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
